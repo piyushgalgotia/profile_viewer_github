@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0f24; /* Simple dark bluish background */
+}
+
+/* Container for the entire page */
+.container {
+    text-align: center;
+    color: white;
+}
+
+/* Header with logo */
+header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Main content styling */
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Search container styling */
+.search-container {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: 70%;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #2ea043;
+}
+
+button:active {
+    background-color: #196c2e;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    color: white;
+    font-size: 14px;
+}
+
+.owner{
+    color: rgb(35, 107, 195);
+    text-align: left;
+    margin: 30px;
+    text-decoration: underline;
+}
+
+.dev ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    
+    
+}
+
+.dev ul li{
+    border: solid;
+    border-radius: 5px;
+    padding: 2px;
+
+}
+
+.dev{
+    color: rgb(35, 107, 195);
+    margin-top: 100px;
+    padding: 0%;
+}
+
+@media screen and (max-width:700px){
+    header , main, div , footer{
+        width: 100%;
+    }
+    
+}
+

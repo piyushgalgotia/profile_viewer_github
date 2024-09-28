@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="30">
+                <span>GitHub Profile Viewer</span>
+            </div>
+        </header>
+
+        <main>
+            <h1>A simpler way to show your GitHub profile and repositories.</h1>
+            <div class="search-container">
+                <input type="text" id="github-username" placeholder="Enter a GitHub username..">
+                <button onclick="viewProfile()">View</button>
+            </div>
+            <div class = "dev">
+                <h5>Amazing Developers</h5>
+                <ul>
+                    <li>wesbos</li>
+                    <li>brianlovin</li>
+                    <li>markdalgleish</li>
+                    <li>Jason Jun</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p class="owner">Created by Piyush Chaturvedi</p>
+        </footer>
+    </div>
+
+    <script>
+        function viewProfile() {
+            const username = document.getElementById('github-username').value;
+            if (username) {
+                window.location.href = `https://github.com/${username}`;
+            } else {
+                alert('Please enter a GitHub username');
+            }
+        }
+    </script>
+</body>
+</html>
