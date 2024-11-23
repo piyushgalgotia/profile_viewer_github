@@ -1,2 +1,2 @@
 # profile_viewer_github
-this is the frontend project using html css and javascript , we can easily view github profile with the help of this website.
+This Frontend Project, built using HTML, CSS, and JavaScript, allows users to easily view GitHub Profiles and their Repositories. Simply search by entering a Username, and explore the details effortlessly!
